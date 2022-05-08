@@ -14259,7 +14259,8 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center><img src="grand_slam.jpg"/></center>
+<p><center><img src="grand_slam.jpg"><center></p>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14391,7 +14392,7 @@ sets wins the match.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[131]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14407,7 +14408,7 @@ sets wins the match.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[132]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create dataframe for Australian Open</span>
@@ -14450,7 +14451,7 @@ sets wins the match.</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[111]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[132]:</div>
 
 
 
@@ -14776,7 +14777,7 @@ sets wins the match.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[133]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># list of all datasets as dataframes</span>
@@ -14830,7 +14831,7 @@ us_open_women: 42 attributes, 76 instances
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[134]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># list of grand slams to be added as column</span>
@@ -14900,13 +14901,13 @@ us_open_women: The following label ST2.1.1 was changed for ST1.2
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[135]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># merge it in one unique dataframe</span>
 <span class="n">gs_matches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">ignore_index</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 
-<span class="n">gs_matches</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">gs_matches</span>
 </pre></div>
 
      </div>
@@ -14922,57 +14923,321 @@ us_open_women: The following label ST2.1.1 was changed for ST1.2
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[114]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[135]:</div>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Player1        0
-Player2        0
-Round          0
-Result         0
-FNL.1          1
-FNL.2          1
-FSP.1          0
-FSW.1          0
-SSP.1          0
-SSW.1          0
-ACE.1         22
-DBF.1          8
-WNR.1        126
-UFE.1        126
-BPC.1          1
-BPW.1          1
-NPA.1         84
-NPW.1         83
-TPW.1        312
-ST1.1          1
-ST2.1          4
-ST3.1        321
-ST4.1        722
-ST5.1        857
-FSP.2          0
-FSW.2          0
-SSP.2          0
-SSW.2          0
-ACE.2         22
-DBF.2          8
-WNR.2        126
-UFE.2        126
-BPC.2          1
-BPW.2          1
-NPA.2         84
-NPW.2         83
-TPW.2        312
-ST1.2          1
-ST2.2          4
-ST3.2        321
-ST4.2        722
-ST5.2        857
-Gender         0
-GrandSlam      0
-dtype: int64</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Player1</th>
+      <th>Player2</th>
+      <th>Round</th>
+      <th>Result</th>
+      <th>FNL.1</th>
+      <th>FNL.2</th>
+      <th>FSP.1</th>
+      <th>FSW.1</th>
+      <th>SSP.1</th>
+      <th>SSW.1</th>
+      <th>...</th>
+      <th>NPA.2</th>
+      <th>NPW.2</th>
+      <th>TPW.2</th>
+      <th>ST1.2</th>
+      <th>ST2.2</th>
+      <th>ST3.2</th>
+      <th>ST4.2</th>
+      <th>ST5.2</th>
+      <th>Gender</th>
+      <th>GrandSlam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Lukas Lacko</td>
+      <td>Novak Djokovic</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>61</td>
+      <td>35</td>
+      <td>39</td>
+      <td>18</td>
+      <td>...</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>101.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>men</td>
+      <td>AusOpen</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Leonardo Mayer</td>
+      <td>Albert Montanes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>61</td>
+      <td>31</td>
+      <td>39</td>
+      <td>13</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>42.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>men</td>
+      <td>AusOpen</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Marcos Baghdatis</td>
+      <td>Denis Istomin</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>52</td>
+      <td>53</td>
+      <td>48</td>
+      <td>20</td>
+      <td>...</td>
+      <td>12.0</td>
+      <td>16.0</td>
+      <td>126.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>men</td>
+      <td>AusOpen</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Dmitry Tursunov</td>
+      <td>Michael Russell</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>53</td>
+      <td>39</td>
+      <td>47</td>
+      <td>24</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>79.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>men</td>
+      <td>AusOpen</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Juan Monaco</td>
+      <td>Ernests Gulbis</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>76</td>
+      <td>63</td>
+      <td>24</td>
+      <td>12</td>
+      <td>...</td>
+      <td>16.0</td>
+      <td>28.0</td>
+      <td>127.0</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>men</td>
+      <td>AusOpen</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>938</th>
+      <td>P Ormaechea</td>
+      <td>K Date-Krumm</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>59</td>
+      <td>32</td>
+      <td>41</td>
+      <td>10</td>
+      <td>...</td>
+      <td>14.0</td>
+      <td>9.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>women</td>
+      <td>USOpen</td>
+    </tr>
+    <tr>
+      <th>939</th>
+      <td>K Pliskova</td>
+      <td>E Bouchard</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>53</td>
+      <td>48</td>
+      <td>47</td>
+      <td>21</td>
+      <td>...</td>
+      <td>13.0</td>
+      <td>10.0</td>
+      <td>NaN</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>women</td>
+      <td>USOpen</td>
+    </tr>
+    <tr>
+      <th>940</th>
+      <td>L Hradecka</td>
+      <td>A Kerber</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>49</td>
+      <td>17</td>
+      <td>51</td>
+      <td>4</td>
+      <td>...</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>NaN</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>women</td>
+      <td>USOpen</td>
+    </tr>
+    <tr>
+      <th>941</th>
+      <td>L Davis</td>
+      <td>C Suarez Navarro</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>63</td>
+      <td>12</td>
+      <td>37</td>
+      <td>3</td>
+      <td>...</td>
+      <td>10.0</td>
+      <td>8.0</td>
+      <td>NaN</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>women</td>
+      <td>USOpen</td>
+    </tr>
+    <tr>
+      <th>942</th>
+      <td>K Mladenovic</td>
+      <td>A Medina Garrigues</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>51</td>
+      <td>29</td>
+      <td>49</td>
+      <td>15</td>
+      <td>...</td>
+      <td>14.0</td>
+      <td>7.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>women</td>
+      <td>USOpen</td>
+    </tr>
+  </tbody>
+</table>
+<p>943 rows × 44 columns</p>
+</div>
 </div>
 
 </div>
@@ -15001,7 +15266,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[136]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># list of matches that did not finish</span>
@@ -15065,7 +15330,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[137]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove matches that did not finish</span>
@@ -15088,7 +15353,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[116]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[137]:</div>
 
 
 
@@ -15425,7 +15690,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[138]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the number of NAs in our dataset per variable</span>
@@ -15445,7 +15710,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[117]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[138]:</div>
 
 
 
@@ -15513,7 +15778,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[139]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the NaNs for the Aces</span>
@@ -15537,7 +15802,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[118]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[139]:</div>
 
 
 
@@ -16133,7 +16398,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[140]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># impute by the mean differentiating by Gender and Grand Slam</span>
@@ -16156,7 +16421,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[119]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[140]:</div>
 
 
 
@@ -16314,7 +16579,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[141]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print NaNs for Double faults</span>
@@ -16338,7 +16603,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[120]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[141]:</div>
 
 
 
@@ -16544,14 +16809,14 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[142]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># impute by the mean differentiating by Gender and Grand Slam</span>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;DBF.1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;DBF.1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;DBF.2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;DBF.2&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="n">gs_matches</span><span class="p">[</span><span class="n">dbf_nan</span><span class="p">]</span>
+<span class="n">gs_matches</span><span class="p">[</span><span class="n">dbf_nan</span><span class="p">][[</span><span class="s2">&quot;DBF.1&quot;</span><span class="p">,</span> <span class="s2">&quot;DBF.2&quot;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -16567,7 +16832,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[121]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[142]:</div>
 
 
 
@@ -16590,177 +16855,43 @@ dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Player1</th>
-      <th>Player2</th>
-      <th>Round</th>
-      <th>Result</th>
-      <th>FNL.1</th>
-      <th>FNL.2</th>
-      <th>FSP.1</th>
-      <th>FSW.1</th>
-      <th>SSP.1</th>
-      <th>SSW.1</th>
-      <th>...</th>
-      <th>NPA.2</th>
-      <th>NPW.2</th>
-      <th>TPW.2</th>
-      <th>ST1.2</th>
-      <th>ST2.2</th>
-      <th>ST3.2</th>
-      <th>ST4.2</th>
-      <th>ST5.2</th>
-      <th>Gender</th>
-      <th>GrandSlam</th>
+      <th>DBF.1</th>
+      <th>DBF.2</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>7</th>
-      <td>David Guez</td>
-      <td>Richard Gasquet</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>64</td>
-      <td>26</td>
-      <td>36</td>
-      <td>12</td>
-      <td>...</td>
-      <td>8.0</td>
-      <td>11.0</td>
-      <td>94.0</td>
-      <td>7.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>men</td>
-      <td>AusOpen</td>
+      <td>4.350427</td>
+      <td>4.615385</td>
     </tr>
     <tr>
       <th>294</th>
-      <td>Simone Bolelli</td>
-      <td>Yen-Hsun Lu</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>63</td>
-      <td>33</td>
-      <td>37</td>
-      <td>12</td>
-      <td>...</td>
-      <td>4.0</td>
-      <td>6.0</td>
-      <td>78.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>2.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>men</td>
-      <td>FrenchOpen</td>
+      <td>2.947826</td>
+      <td>3.626087</td>
     </tr>
     <tr>
       <th>300</th>
-      <td>Somdev Devvarman</td>
-      <td>Roger Federer</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>61</td>
-      <td>19</td>
-      <td>39</td>
-      <td>16</td>
-      <td>...</td>
-      <td>19.0</td>
-      <td>30.0</td>
-      <td>88.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>men</td>
-      <td>FrenchOpen</td>
+      <td>2.947826</td>
+      <td>3.626087</td>
     </tr>
     <tr>
       <th>427</th>
-      <td>Vania King</td>
-      <td>Sloane Stephens</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>82</td>
-      <td>17</td>
-      <td>18</td>
-      <td>6</td>
-      <td>...</td>
-      <td>7.0</td>
-      <td>11.0</td>
-      <td>57.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>women</td>
-      <td>FrenchOpen</td>
+      <td>2.902439</td>
+      <td>3.065041</td>
     </tr>
     <tr>
       <th>484</th>
-      <td>Serena Williams</td>
-      <td>Sara Errani</td>
-      <td>6</td>
-      <td>1</td>
-      <td>2.0</td>
-      <td>0.0</td>
-      <td>52</td>
-      <td>14</td>
-      <td>48</td>
-      <td>14</td>
-      <td>...</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>16.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>women</td>
-      <td>FrenchOpen</td>
+      <td>2.902439</td>
+      <td>3.065041</td>
     </tr>
     <tr>
       <th>549</th>
-      <td>N.Djokovic</td>
-      <td>F.Mayer</td>
-      <td>1</td>
-      <td>1</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>63</td>
-      <td>41</td>
-      <td>37</td>
-      <td>26</td>
-      <td>...</td>
-      <td>29.0</td>
-      <td>19.0</td>
-      <td>NaN</td>
-      <td>3.0</td>
-      <td>5.0</td>
-      <td>4.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>men</td>
-      <td>Wimbledon</td>
+      <td>3.468468</td>
+      <td>3.387387</td>
     </tr>
   </tbody>
 </table>
-<p>6 rows × 44 columns</p>
 </div>
 </div>
 
@@ -16778,7 +16909,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[143]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print NaNs for the Winners and Unforced errors</span>
@@ -16804,7 +16935,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[122]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[143]:</div>
 
 
 
@@ -17130,7 +17261,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[123]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[144]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">gs_matches</span><span class="p">[</span><span class="n">wnr_and_ufe_nan</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">gs_matches</span><span class="p">[</span><span class="s2">&quot;Gender&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;men&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">gs_matches</span><span class="p">[</span><span class="s2">&quot;GrandSlam&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;USOpen&quot;</span><span class="p">)])</span>
@@ -17149,7 +17280,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[123]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[144]:</div>
 
 
 
@@ -17173,7 +17304,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[124]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[145]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create dataframe for match IDs</span>
@@ -17209,7 +17340,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[124]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[145]:</div>
 
 
 
@@ -17355,7 +17486,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[125]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[146]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># subset of Men&#39;s US Open from original merged dataframe</span>
@@ -17392,7 +17523,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[125]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[146]:</div>
 
 
 
@@ -17417,10 +17548,10 @@ dtype: int64</pre>
 <p>After we impute the data, we reduced the number of missing winners and unforced errors from 123 instances to 37. Now we can fill in the rest of the missing values like we have done above.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[147]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># impute remaining values by the mean differentiating by Gender and Grand Slam</span>
@@ -17428,11 +17559,140 @@ dtype: int64</pre>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;UFE.2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;UFE.2&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;WNR.1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;WNR.1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;WNR.2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;WNR.2&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">gs_matches</span><span class="p">[</span><span class="n">wnr_and_ufe_nan</span><span class="p">][[</span><span class="s2">&quot;WNR.1&quot;</span><span class="p">,</span><span class="s2">&quot;WNR.2&quot;</span><span class="p">,</span><span class="s2">&quot;UFE.1&quot;</span><span class="p">,</span><span class="s2">&quot;UFE.2&quot;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[147]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>WNR.1</th>
+      <th>WNR.2</th>
+      <th>UFE.1</th>
+      <th>UFE.2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>719</th>
+      <td>40.000000</td>
+      <td>32.000000</td>
+      <td>18.00000</td>
+      <td>41.000000</td>
+    </tr>
+    <tr>
+      <th>720</th>
+      <td>36.325581</td>
+      <td>36.639535</td>
+      <td>36.94186</td>
+      <td>37.546512</td>
+    </tr>
+    <tr>
+      <th>721</th>
+      <td>36.325581</td>
+      <td>36.639535</td>
+      <td>36.94186</td>
+      <td>37.546512</td>
+    </tr>
+    <tr>
+      <th>722</th>
+      <td>36.325581</td>
+      <td>36.639535</td>
+      <td>36.94186</td>
+      <td>37.546512</td>
+    </tr>
+    <tr>
+      <th>723</th>
+      <td>36.325581</td>
+      <td>36.639535</td>
+      <td>36.94186</td>
+      <td>37.546512</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>837</th>
+      <td>32.000000</td>
+      <td>15.000000</td>
+      <td>45.00000</td>
+      <td>31.000000</td>
+    </tr>
+    <tr>
+      <th>838</th>
+      <td>15.000000</td>
+      <td>45.000000</td>
+      <td>30.00000</td>
+      <td>37.000000</td>
+    </tr>
+    <tr>
+      <th>839</th>
+      <td>38.000000</td>
+      <td>57.000000</td>
+      <td>46.00000</td>
+      <td>69.000000</td>
+    </tr>
+    <tr>
+      <th>840</th>
+      <td>26.000000</td>
+      <td>35.000000</td>
+      <td>32.00000</td>
+      <td>24.000000</td>
+    </tr>
+    <tr>
+      <th>841</th>
+      <td>46.000000</td>
+      <td>27.000000</td>
+      <td>53.00000</td>
+      <td>20.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>123 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -17444,7 +17704,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[148]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print NaNs for Net points attempted and won</span>
@@ -17470,7 +17730,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[127]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[148]:</div>
 
 
 
@@ -17793,10 +18053,10 @@ dtype: int64</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[149]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># impute by the mean differentiating by Gender and Grand Slam</span>
@@ -17804,11 +18064,140 @@ dtype: int64</pre>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;NPA.2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;NPA.2&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;NPW.1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;NPW.1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">gs_matches</span><span class="p">[</span><span class="s1">&#39;NPW.2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">gs_matches</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;GrandSlam&quot;</span><span class="p">])[</span><span class="s2">&quot;NPW.2&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">gs_matches</span><span class="p">[</span><span class="n">npa_and_npw_nan</span><span class="p">][[</span><span class="s2">&quot;NPA.1&quot;</span><span class="p">,</span><span class="s2">&quot;NPA.2&quot;</span><span class="p">,</span><span class="s2">&quot;NPW.1&quot;</span><span class="p">,</span><span class="s2">&quot;NPW.2&quot;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[149]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NPA.1</th>
+      <th>NPA.2</th>
+      <th>NPW.1</th>
+      <th>NPW.2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.791667</td>
+      <td>16.947917</td>
+      <td>23.125000</td>
+      <td>24.812500</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>14.791667</td>
+      <td>16.947917</td>
+      <td>23.125000</td>
+      <td>24.812500</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>14.791667</td>
+      <td>16.947917</td>
+      <td>23.125000</td>
+      <td>24.812500</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14.791667</td>
+      <td>16.947917</td>
+      <td>23.125000</td>
+      <td>24.812500</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>14.791667</td>
+      <td>16.947917</td>
+      <td>23.125000</td>
+      <td>24.812500</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>18.500000</td>
+      <td>20.034884</td>
+      <td>28.127907</td>
+      <td>31.534884</td>
+    </tr>
+    <tr>
+      <th>802</th>
+      <td>18.500000</td>
+      <td>20.034884</td>
+      <td>28.127907</td>
+      <td>31.534884</td>
+    </tr>
+    <tr>
+      <th>807</th>
+      <td>18.500000</td>
+      <td>20.034884</td>
+      <td>28.127907</td>
+      <td>31.534884</td>
+    </tr>
+    <tr>
+      <th>890</th>
+      <td>14.256757</td>
+      <td>13.864865</td>
+      <td>9.573333</td>
+      <td>9.866667</td>
+    </tr>
+    <tr>
+      <th>905</th>
+      <td>14.256757</td>
+      <td>13.864865</td>
+      <td>62.000000</td>
+      <td>34.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>83 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -17820,7 +18209,7 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[150]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># delete irrelevant columns</span>
@@ -17842,7 +18231,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[129]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[150]:</div>
 
 
 
@@ -18168,10 +18557,11 @@ dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[151]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gs_matches</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the number of NAs in our dataset per variable</span>
+<span class="n">gs_matches</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18187,7 +18577,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[130]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[151]:</div>
 
 
 
